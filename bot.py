@@ -14,11 +14,11 @@ bot = Client('pdiskshortner bot',
              workers=50,
              sleep_threshold=10)
 
-@bot.on_message(commands=['start'])
+@bot.on_message(filters.regex=['start'])
 def send_welcome(message):
     bot.reply_to(message, 'Hi I am one and Only a personal Bot to short links from droplink website  Made with ♥️ by @NP_technology')
 
-@bot.on_message(commands=['help'])
+@bot.on_message(filters.regex=['help'])
 def send_welcome(message):
     bot.reply_to(message, 'hey, bro I can convert big/long link to a short link of droplink  Made with ♥️ by @NP_technology')
 
