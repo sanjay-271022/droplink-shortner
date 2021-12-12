@@ -31,7 +31,7 @@ async def link_handler(bot, message):
 
 ({short_link})
         
-Here is your  [Short Link]({short_link})''', quote=True)
+This link as been shortened by @np_technology for free subscribe to our YouTube channel to get more awesome thinks like this https://youtube.com/channel/UCJ58-uPHipMiP4-uVmp0iRw [Short Link]({short_link})''', quote=True)
     except Exception as e:
         await message.reply(f'Error: {e}', quote=True)
 
