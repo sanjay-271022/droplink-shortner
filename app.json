@@ -22,7 +22,7 @@
         },
         "API_KEY": {
             "description": "Get API key from droplink.co/member/tools/api",
-            "required": True
+            "required": true
         }
     },
     "addons": [],
