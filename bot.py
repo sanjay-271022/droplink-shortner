@@ -13,14 +13,17 @@ bot = Client('pdiskshortner bot',
              bot_token=BOT_TOKEN,
              workers=50,
              sleep_threshold=10)
+@bot.on_message(filters.command('start') & filters.private)
+async def start(bot, message):
+    await message.reply(
+        f"**Hi {message.chat.first_name}!**\n\n"
+        " one and Only a personal Bot to short links from droplink website  Made with ♥️ by @NP_technology")
 
-@bot.on_message(filters.regex=['start'])
-def send_welcome(message):
-    bot.reply_to(message, 'Hi I am one and Only a personal Bot to short links from droplink website  Made with ♥️ by @NP_technology')
-
-@bot.on_message(filters.regex=['help'])
-def send_welcome(message):
-    bot.reply_to(message, 'hey, bro I can convert big/long link to a short link of droplink  Made with ♥️ by @NP_technology')
+@bot.on_message(filters.command('help') & filters.private)
+async def help(bot, message):
+    await message.reply(
+        f"**Hi {message.chat.first_name}!**\n\n"
+        "hey, bro I can convert big/long link to a short link of droplink  Made with ♥️ by @NP_technology")
 
 @bot.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
 async def link_handler(bot, message):
