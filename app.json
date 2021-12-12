@@ -9,19 +9,19 @@
     "repository": "",
     "env": {
         "BOT_TOKEN": {
-            "description": "Your bot token",
+            "description": "from @botfather",
             "value": ""
         },
         "API_ID": {
-            "description": "Get this value from https://t.me/ScrapperRoBot",
+            "description": "Get this value from telegram.org",
             "value": ""
         },
         "API_HASH": {
-            "description": "Get this value from https://t.me/ScrapperRoBot",
+            "description": "Get this value from telegram.org",
             "value": ""
         },
         "API_KEY": {
-            "description": "Get API key from pdiskshortner.net/member/tools/api",
+            "description": "Get API key from droplink.co/member/tools/api",
             "required": false
         }
     },
