@@ -17,13 +17,13 @@ bot = Client('pdiskshortner bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        " one and Only a personal Bot to short links from droplink website  Made with ♥️ by @NP_technology")
+        " one and Only a personal Bot to short links from droplink website  Made with ♥️ by @tele_united_bots")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def help(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "hey, bro I can convert big/long link to a short link of droplink  Made with ♥️ by @NP_technology")
+        "hey, bro I can convert big/long link to a short link of droplink  Made with ♥️ by @tele_united_bots")
 
 @bot.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
 async def link_handler(bot, message):
@@ -34,7 +34,7 @@ async def link_handler(bot, message):
 
 ({short_link})
         
-This link as been shortened by @np_technology for free subscribe to our YouTube channel to get more awesome thinks like this https://youtube.com/channel/UCJ58-uPHipMiP4-uVmp0iRw [Short Link]({short_link})''', quote=True)
+This link as been shortened by @tele_united_bots  [Short Link]({short_link})''', quote=True)
     except Exception as e:
         await message.reply(f'Error: {e}', quote=True)
 
